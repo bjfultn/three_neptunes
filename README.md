@@ -29,3 +29,16 @@
 | **pressure**  | Atmospheric pressure at weather station - mean(pressure) | hPa |
 | **ha** | Hour angle of telescope - mean(hour angle) | hours |
 | **exptime** | Exposure time - mean(exposure time)| s |
+
+
+
+##### summary\_{star}_{instrument}.csv
+  - These files contain a summary printout from the ordinary least squares fit to all environmental/PSF parameters that showed Spearman rank correlation coefficients greater than 0.1
+  - Look here to determine which parameters were included in the fit for a given star+instrument combination
+
+
+##### vst{star}_{instrument}.dat
+  - IDL save files containing at least the cf3 and cf5 tags
+  - These are the default output files from the California Planet Search RV extraction pipeline
+  - The cf3 tag contains the non-detrended velocities and the cf5 tag contains the detrended velocities
+  - Please contact me if you need further explaination of the data contained within these IDL structures
